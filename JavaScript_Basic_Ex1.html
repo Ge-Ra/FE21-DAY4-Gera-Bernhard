@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic</title>
-    <link rel="stylesheet" type="text/css" href="css.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Basic
 Ex 1
 Create a form with input fields for your firstname, lastname and age.  
@@ -20,21 +18,34 @@ If the length of your name is larger than 5 characters, change the text colour t
 Otherwise, change the text-colour to red.  -->
 
     <h1>Enter your data:</h1>
-    <input type="text" class="input" name="firstname" placeholder="Enter your first name">
-    <input type="text" class="input" name="lastname" placeholder="Enter your last name">
-    <input type="text" class="input" name="age" placeholder="Enter your age">
-    <button id="btn">Submit</button>
+    <form>
+      <input
+        type="text"
+        class="input"
+        name="firstname"
+        placeholder="Enter your first name"
+      />
+      <input
+        type="text"
+        class="input"
+        name="lastname"
+        placeholder="Enter your last name"
+      />
+      <input
+        type="text"
+        class="input"
+        name="age"
+        placeholder="Enter your age"
+      />
+      <!-- <button id="btn">Submit</button> -->
+      <input type="submit" id="btn" />
+    </form>
+
     <div class="fname"></div>
     <div class="lname"></div>
     <div class="age"></div>
+
     <p id="result"></p>
-
-
-
-
-
-
-
 
     <!-- Ex 2
 Extend the previous form to have a select option, where your profession can be selected. 
@@ -44,24 +55,11 @@ if you work in hospitality, your div will turn yellow, etc.
 
 (Hint: extracting the selection value will work similarly to extracting the input values) -->
 
-
-
-
-
-
-
-
-
-
     <!-- Intermediate
 Ex 1
 Create a Javascript program that will make the Santa Clauses 
 disappear on a click from the following 3x3 matrix. 
 Only the clicked Santa Claus should disappear.-->
-
-
-
-
 
     <!-- Ex 2 | Dynamic Background
 Create a JavaScript function to create random background colors 
@@ -70,7 +68,6 @@ Hint:
 - Consider the RGB color code
 
 - Consider the Global DOM built-in properties and methods -->
-
 
     <!-- Advanced
 Create a circle and center it on the page. 
@@ -84,8 +81,6 @@ When the mouse leaves the circle you will see the message under it :
 When you click on the circle, the background will change to gray.
 
 When you double-click on the circle, the background will change to blue.  -->
-
-
 
     <!-- Challenge
 Ex Description:
@@ -103,10 +98,6 @@ each player's half, so that the player can see what they "rolled".
 Once both players have rolled, announce the winner based on the highest score! 
 Do your best to create a rich game-design using CSS or Bootstrap. -->
 
-
-
-
-    <script src="script.js>"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
